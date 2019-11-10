@@ -8,6 +8,6 @@ Gem::Specification.new do |s|
   s.email       = 'johannes@kuehnel.co.at'
   s.files       = ["lib/jekyll-age.rb"]
   s.homepage    =
-    'https://www.kuehnel.co.at'
+    'https://github.com/JohannesKuehnel/jekyll-age'
   s.license       = 'MIT'
 end
