@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'jekyll-age'
-  s.version     = '0.1.0'
+  s.version     = '0.1.1'
   s.date        = '2019-11-10'
   s.summary     = "Age tag for jekyll"
   s.description = "Provides an age tag for jekyll/liquid"
