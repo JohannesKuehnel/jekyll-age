@@ -3,11 +3,11 @@ module Jekyll
 
     def initialize(tag_name, date, tokens)
       super
-      @date = validate_date(date)
+      @date = RenderAgeTag.validate_date(date)
     end
 
     def render(context)
-      age = get_age(@date)
+      age = RenderAgeTag.get_age(@date)
       "#{age}"
     end
 
