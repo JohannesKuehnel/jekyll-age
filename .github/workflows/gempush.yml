@@ -22,10 +22,11 @@ jobs:
 
     - name: Test
       run: |
-        gem install rake
-        rake test
+        gem install bundler
+        bundle install --jobs 4 --retry 3
+        bundle exec rake
 
-    - name: Publish to RubyGems
+    - name: Build & Publish to RubyGems
       run: |
         mkdir -p $HOME/.gem
         touch $HOME/.gem/credentials
