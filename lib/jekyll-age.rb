@@ -7,15 +7,15 @@ module Jekyll
     end
 
     def render(context)
-      age = getAge(@date)
+      age = get_age(@date)
       "#{age}"
     end
 
-    def validate_date(date)
+    def self.validate_date(date)
       Date.parse(date.to_s)
     end
 
-    def getAge(from, to = Date.today)
+    def self.get_age(from, to = Date.today)
       years = to.year - from.year
       if to.yday < from.yday
         years -= 1
